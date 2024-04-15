@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#E6D8B7">
+
+
+    <TextView
+        android:id="@+id/txtidelec1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:background="#F8F5F7"
+        android:gravity="start"
+        android:text="Electronic Distribution"
+        android:textColor="#CB0CDF"
+        android:textSize="24sp"
+        android:textStyle="normal|bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtnumid"
+        android:layout_width="234dp"
+        android:layout_height="56dp"
+        android:background="#11FBF8F8"
+        android:backgroundTint="#E53935"
+        android:ems="10"
+        android:hint="Enter the atomic number"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtidelec1" />
+
+    <EditText
+        android:id="@+id/txtnameid"
+        android:layout_width="233dp"
+        android:layout_height="51dp"
+        android:background="#16B35E5E"
+        android:ems="10"
+        android:hint="Enter the item  name"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtnumid" />
+
+    <Button
+        android:id="@+id/btnshow"
+        android:layout_width="203dp"
+        android:layout_height="60dp"
+        android:background="@color/black"
+        android:backgroundTint="#1E88E5"
+        android:text="Show"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtnameid"
+        tools:layout_editor_absoluteY="270dp" />
+
+    <TextView
+        android:id="@+id/txtansid"
+        android:layout_width="325dp"
+        android:layout_height="161dp"
+        android:background="#F3E4A3"
+        android:textColor="#CB0CDF"
+        android:textSize="24sp"
+        android:textStyle="normal|bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnshow" />
+
+    <Button
+        android:id="@+id/btnclearid"
+        android:layout_width="111dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="16dp"
+        android:background="#E45A5A"
+        android:backgroundTint="#DD7070"
+        android:text="Clear'"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtansid"
+        tools:layout_editor_absoluteY="588dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
