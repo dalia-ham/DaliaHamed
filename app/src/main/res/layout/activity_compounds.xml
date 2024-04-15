@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2FFA8">
+
+    <TextView
+        android:id="@+id/txtid"
+        android:layout_width="336dp"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:text="Compounds, Element and Solution"
+        android:textColor="#034AFF"
+        android:textSize="34sp"
+        android:textStyle="normal|bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="337dp"
+        android:layout_height="280dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtid"
+        app:layout_constraintVertical_bias="0.1"
+        app:srcCompat="@drawable/___" />
+
+    <Button
+        android:id="@+id/btnelementid"
+        android:layout_width="124dp"
+        android:layout_height="46dp"
+        android:text="Elements"
+        app:layout_constraintEnd_toStartOf="@id/btncoid"
+        app:layout_constraintHorizontal_bias="0.33"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView3" />
+
+    <Button
+        android:id="@+id/btncoid"
+        android:layout_width="135dp"
+        android:layout_height="40dp"
+        android:text="Compounds"
+        app:layout_constraintEnd_toStartOf="@id/btnmid3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@id/btnelementid"
+        app:layout_constraintTop_toBottomOf="@id/imageView3" />
+
+    <Button
+        android:id="@+id/btnmid3"
+        android:layout_width="0dp"
+        android:layout_height="41dp"
+        android:text="Solution"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.67"
+        app:layout_constraintStart_toEndOf="@id/btncoid"
+        app:layout_constraintTop_toBottomOf="@id/imageView3"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <TextView
+        android:id="@+id/txtelemid"
+        android:layout_width="384dp"
+        android:layout_height="94dp"
+        android:layout_marginTop="28dp"
+        android:text="An element is a substance made up of a single type of atom, which cannot be broken down into anything simpler through a chemical reaction. There are 118 known elements organized in the periodic table of elements"
+        android:textColor="#3949AB"
+        android:textStyle="normal|bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.407"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnmid3" />
+
+    <TextView
+        android:id="@+id/txtcomp2id"
+        android:layout_width="369dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="20dp"
+        android:text="A compound is any substance made up of atoms of two or more different elements chemically combined."
+        android:textColor="#3949AB"
+        android:textStyle="normal|bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.214"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtelemid" />
+
+    <TextView
+        android:id="@+id/txt3solid"
+        android:layout_width="386dp"
+        android:layout_height="101dp"
+        android:layout_marginTop="4dp"
+        android:text="A homogeneous mixture of two or more pure substances that cannot be isolated from each other, such as by filtration, for example. It consists of a solvent and a solute, and the solvent is often larger than the solute, such as a solution of sugar in water. The process of decomposition or disintegration is also called dissolution"
+        android:textColor="#3949AB"
+        android:textStyle="normal|bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.36"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtcomp2id" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

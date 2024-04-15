@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6FAFE6"
+    android:backgroundTint="#89BEEC">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="228dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="38dp"
+        android:background="#039BE5"
+        android:backgroundTint="#D9E3EC"
+        android:gravity="center"
+        android:text="Molr Mass"
+        android:textColor="#3949AB"
+        android:textSize="24sp"
+        android:textStyle="normal|bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="377dp"
+        android:layout_height="118dp"
+        android:layout_marginTop="16dp"
+        android:background="#1E88E5"
+        android:backgroundTint="#0ADBE7F1"
+        android:gravity="center"
+        android:text="Molar mass is the mass of one mole of an element or chemical compound. In chemistry, it is the mass of Avogadro's number of atoms of an element or the mass of the same number of molecules of a compound. The units of molar mass are grams per mole (g/mol)."
+        android:textColor="#3949AB"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <EditText
+        android:id="@+id/txtEnterid"
+        android:layout_width="275dp"
+        android:layout_height="41dp"
+        android:ems="10"
+        android:hint="Enter the name of the compound"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/btncalculate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <Button
+        android:id="@+id/btncalculate"
+        android:layout_width="144dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#1E88E5"
+        android:text="Calculate"
+        app:layout_constraintBottom_toTopOf="@+id/txtresid"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtresid"
+        android:layout_width="376dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btncalculate" />
+
+    <TextView
+        android:id="@+id/txtrule2id"
+        android:layout_width="365dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="16dp"
+        android:background="#FDF9F9"
+        android:gravity="center"
+        android:text="Molar mass = (mass of the first element x the percentage of the element) + (mass of the element x the percentage of the second element +......)"
+        android:textColor="#00ACC1"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtresid" />
+
+    <Button
+        android:id="@+id/btnsaveid"
+        android:layout_width="116dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#1E88E5"
+        android:text="Save"
+        app:layout_constraintBottom_toTopOf="@+id/txtsaveid"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtsaveid"
+        android:layout_width="391dp"
+        android:layout_height="110dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
