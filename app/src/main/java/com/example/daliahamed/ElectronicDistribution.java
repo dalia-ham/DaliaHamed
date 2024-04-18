@@ -1,5 +1,6 @@
 package com.example.daliahamed;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
@@ -14,6 +15,8 @@ public class ElectronicDistribution extends AppCompatActivity {
     private Button btnShow;
     private TextView txtAns;
     private Button btnClear;
+    private Button btnMolarMAss;
+
     private SharedPreferences sharedPreferences;
 
     @Override
@@ -27,6 +30,7 @@ public class ElectronicDistribution extends AppCompatActivity {
         txtAns = findViewById(R.id.txtansid);
         btnClear = findViewById(R.id.btnclearid);
         sharedPreferences = getSharedPreferences("my_preferences", MODE_PRIVATE);
+        btnMolarMAss = findViewById(R.id.btnMassid);
 
         btnShow.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -48,6 +52,8 @@ public class ElectronicDistribution extends AppCompatActivity {
             }
         });
 
+
+
         btnClear.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -67,8 +73,17 @@ public class ElectronicDistribution extends AppCompatActivity {
         int savedAtomicNum = sharedPreferences.getInt("atomic_number", 0);
         txtName.setText(savedName);
         txtNum.setText(String.valueOf(savedAtomicNum));
-    }
 
+        btnMolarMAss.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                // Create an Intent to start the new activity
+                Intent intent4 = new Intent(ElectronicDistribution.this, MolarMassActivity.class);
+                // Start the new activity
+                startActivity(intent4);
+            }
+        });
+    }
     private String calculateElectronicDistribution(int atomicNum) {
         StringBuilder distribution = new StringBuilder();
 
@@ -94,4 +109,8 @@ public class ElectronicDistribution extends AppCompatActivity {
 
         return distribution.toString();
     }
+
+
+
+
 }

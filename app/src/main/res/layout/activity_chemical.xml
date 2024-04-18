@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#CABEE3">
+    android:background="#D9E6C0">
 
     <TextView
         android:id="@+id/textView2"
@@ -13,11 +13,12 @@
         android:layout_marginTop="24dp"
         android:gravity="center"
         android:text="Periodic Table"
-        android:textSize="20sp"
-        android:textStyle="bold"
+        android:textColor="#2CCF33"
         app:layout_constraintBottom_toTopOf="@id/imageView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
@@ -33,10 +34,10 @@
 
     <Spinner
         android:id="@+id/spnId"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="107dp"
+        android:layout_height="29dp"
         android:layout_marginTop="24dp"
-        android:background="#BE91CA"
+        android:background="#ABDDAD"
         android:gravity="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -44,11 +45,10 @@
 
     <Button
         android:id="@+id/btnsearch"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="126dp"
+        android:layout_height="48dp"
         android:layout_marginTop="24dp"
-        android:background="#8E24AA"
-        android:backgroundTint="#63C383"
+        android:backgroundTint="#0E8714"
         android:text="Search"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

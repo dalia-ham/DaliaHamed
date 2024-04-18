@@ -51,12 +51,6 @@ public class DataBase {
 
 
     }
-
-    public String[] getCategories(){
-        //assume we are reading data from database
-        String[] categories={"metal","nonMetal", "metalloid"};
-        return categories;
-    }
     public List <Menu> getMenuItems(String catogery){
         List<Menu>result =new ArrayList<>();
         for(Menu m:items){
@@ -66,6 +60,13 @@ public class DataBase {
         }
         return result;
     }
+
+    public String[] getCategories(){
+        //assume we are reading data from database
+        String[] categories={"metal","nonMetal", "metalloid"};
+        return categories;
+    }
+
 }
 /*
 public String[] getCategories(){

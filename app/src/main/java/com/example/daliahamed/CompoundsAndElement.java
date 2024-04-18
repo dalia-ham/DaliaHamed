@@ -41,6 +41,14 @@ public class CompoundsAndElement extends AppCompatActivity {
                 textView3.setVisibility(View.GONE);
             }
         });
+        button3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                textView1.setVisibility(View.GONE);
+                textView2.setVisibility(View.GONE);
+                textView3.setVisibility(View.VISIBLE);
+            }
+        });
 
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -51,13 +59,6 @@ public class CompoundsAndElement extends AppCompatActivity {
             }
         });
 
-        button3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                textView1.setVisibility(View.GONE);
-                textView2.setVisibility(View.GONE);
-                textView3.setVisibility(View.VISIBLE);
-            }
-        });
+
     }
 }

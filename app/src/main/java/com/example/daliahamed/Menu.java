@@ -7,6 +7,7 @@ public class Menu {
     private String type;
     private String symbol;
     private int  number;
+// Dalia
 
     public Menu() {
     }

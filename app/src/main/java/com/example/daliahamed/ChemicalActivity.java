@@ -43,17 +43,18 @@ public class ChemicalActivity extends AppCompatActivity {
 
     }
 
-
+    private void setupViews() {
+        spnMenu = findViewById(R.id.spnId);
+        btnSearch = findViewById(R.id.btnsearch);
+        lstItems = findViewById(R.id.listid1);
+    }
     private void populateSpinner() {
         DataBase db=new DataBase();
         String[] symbol= db.getCategories();
         ArrayAdapter<String> adapter=new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, symbol);
         spnMenu.setAdapter(adapter);
     }
-
-    private void setupViews() {
-        spnMenu = findViewById(R.id.spnId);
-        btnSearch = findViewById(R.id.btnsearch);
-        lstItems = findViewById(R.id.listid1);
-    }
 }
+
+
+
